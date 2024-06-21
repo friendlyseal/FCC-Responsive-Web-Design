@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Survey Form Project</title>
+    <link rel="stylesheet" href="Survey-Form.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+    <div id ="body-header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">What kind of coding student are you?</p>
+        </div>
+        
+        <hr/>
+        
+        <form id="survey-form">
+          
+          <div id="basic-info">
+          <div id="name-enter" class="form-group">
+            <label id="name-label" for="Name" class="form-header">Name</label>
+            <input id="name" type="text" class="form-input" placeholder="Please Enter Your Name" required/>
+          </div>
+          
+          <div id="email-enter" class="form-group">
+            <label id="email-label" for="Email" class="form-header">Email</label>
+            <input id="email" type="email" class="form-input" placeholder = "Please Enter Your Email Address" required/>
+          </div>
+          
+          <div id="age-enter" class="form-group">
+              <label id="number-label" for="Age" class="form-header">Age</label>
+              <input id="number" type="number" class="form-input" min="10" max="99" placeholder = "Please Enter Your Age" />
+          </div>
+          </div>
+          
+          <div id="education-choices" class="form-group">
+            <label id="education-label" class="form-header">What Level of Education Are You?</label>
+            <select id="dropdown">
+              <option disabled selected value>Select...</option>
+              <option value="high-school">High School / GED</option>
+              <option value="bachelors">Bachelor's</option>
+              <option value="masters">Master's</option>
+              <option value="doctorate">Doctorate</option>
+              <option value="other">Other / Not Applicable</option>
+            </select>
+          </div>
+          
+          <div id="feedback-choices" class="form-group">
+            <p class="form-header">How have you enjoyed coding?</p>
+            <label>
+              <input type="radio" name="feedback-choice" value="great" checked>It's Great!
+            </label>
+            <label>
+              <input type="radio" name="feedback-choice" value="okay">It's Okay
+            </label>
+            <label>
+              <input type="radio" name="feedback-choice" value="suffering">Suffering and Despair
+            </label>
+          </div>
+          
+          <div id="checkboxes" class="form-group">
+            <p class="form-header">What do you use to study?</p>
+            <label>
+              <input type="checkbox" value="tutorial-websites">Tutorial websites (FreeCodeCamp, Odin Project, etc)
+            </label>
+            <label>
+              <input type="checkbox" value="youtube">Youtube
+            </label>
+            <label>
+              <input type="checkbox" value="college-lectures">College Lectures
+            </label>
+            <label>
+              <input type="checkbox" value="textbooks">Textbooks
+            </label>
+            <label>
+              <input type="checkbox" value="other">Other
+            </label>
+          </div>
+          
+          <div id="additional-comments" class="form-group">
+            <textarea placeholder="Additional comments..."></textarea>
+          </div>
+          
+          <div id="submit-button">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+    
+        </form>
+  </body>
+</html>

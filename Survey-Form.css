@@ -1,0 +1,53 @@
+body {
+    background-color: #f1beff; 
+  }
+  #body-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #body-header h1{
+    margin-bottom: 0;
+  }
+  #body-header p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  #fbebff ;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    max-width: 85%
+  }
+  .form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #submit-button{
+    display: flex;
+    justify-content: center;
+  }
+  #submit:hover{
+    background-color: cyan;
+  }
+  /*
+  form-group max width? play with the margin?
+  
+  */
+  
+  /*
+  What we learned: padding is for within a box, margin is for space between the boxes
+  
+  uneven spacing could be: default padding applied to the body or parent element
+  
+  */
