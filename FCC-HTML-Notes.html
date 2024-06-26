@@ -12,7 +12,7 @@
     
     <main> <!--The main element is used to represent the main content of the body of an HTML document. Content inside the main element should be unique to the document and should not be repeated in other parts of the document.-->
         
-      <div id="h-and-p-example">
+      <section id="h-and-p-example"> <!--The section element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. It is a semantic element that helps with SEO and accessibility.-->
           <h1>This is h1</h1>
           <h2>This is h2</h2>
           <h3>This is h3</h3>
@@ -20,12 +20,14 @@
           <h5>This is h5</h5>
           <h6>This is h6</h6>
           <p>This is p</p>
-      </div>
+      </section>
 
-      <div id="img-example">
+      <section id="img-example">
         <p>Steve from BigtopBurger img example:</p>
-        <img src="https://64.media.tumblr.com/d5c9f2aa618617b4e19b39167c7c1a1c/fae18ea8a0fe8292-22/s1280x1920/25459e332fa110d662e89240ba87ea81ac70cca8.jpg">
-      </div>
+        <p>makes use of the alt= attribute incase end user is using a screen reader</p>
+        <p>target = "_blank" will make a link open to a new tab</p>
+        <img src="https://64.media.tumblr.com/d5c9f2aa618617b4e19b39167c7c1a1c/fae18ea8a0fe8292-22/s1280x1920/25459e332fa110d662e89240ba87ea81ac70cca8.jpg" alt="Steve from Bigtop Burger" target = "_blank">
+      </section>
 
       <div>
 
@@ -34,3 +36,4 @@
   </body>
 </html>
 <!--nested elements are indented 2 spaces (tab key)-->
+<!--TO DO: change the img element into a link, update the notes in the <p> elements I have going-->
