@@ -6,6 +6,8 @@ body{
   #header{
     text-align: center;
     border: solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   #img-div{
@@ -20,11 +22,18 @@ body{
   }
   
   #related-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     text-align: center;
   }
   
   .links{
     color: blue;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .links:hover{
     background-color: red;
