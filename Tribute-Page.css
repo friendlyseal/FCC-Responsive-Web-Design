@@ -19,6 +19,8 @@ body{
     max-width: 100%;
     max-height: 400px;
     height: auto;
+    display: block;
+    margin: auto;
   }
   
   #related-links{
