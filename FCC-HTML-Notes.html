@@ -57,7 +57,16 @@
       <section id="form-examble">
         <p>For form elements: action="[url]" indicates where the data should be sent</p>
         <form action="FILLER">
-          <input type="text" placeholder="type = text">
+          
+          <div id="text-example">
+            <input type="text" placeholder="type = text" name="text-example" required> <!--In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.-->
+            <button>Fake Button</button>
+            <button type="submit">Submit</button>
+          </div>
+
+          <div id="radio-buttons-example">
+            <label><input type="radio" id="radio-button-example"> Radio Button</label><!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). clicking the text of the label will also select the radio button itself-->
+          </div>
         </form>
       </section>
 
