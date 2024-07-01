@@ -58,15 +58,18 @@
         <p>For form elements: action="[url]" indicates where the data should be sent</p>
         <form action="FILLER">
           
-          <div id="text-example">
+          <fieldset id="text-example"> <!--The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line. Will also automatically add a border to the block containing a fieldset-->
             <input type="text" placeholder="type = text" name="text-example" required> <!--In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.-->
             <button>Fake Button</button>
             <button type="submit">Submit</button>
-          </div>
+          </fieldset>
 
-          <div id="radio-buttons-example">
-            <label><input type="radio" id="radio-button-example"> Radio Button</label><!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). clicking the text of the label will also select the radio button itself-->
-          </div>
+          <fieldset id="radio-buttons-example">
+            <legend>Check out these radio buttons big guy</legend> <!--The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.-->
+            <!--form data (for radio buttons) is based on name and value attributes. value attributes can be same as id-->
+            <label><input type="radio" id="radio-button-example" name="radio-example"> Radio Button</label><!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). clicking the text of the label will also select the radio button itself-->
+            <label><input type="radio" id="other-radio-button-example" name="radio-example">Other Radio Button</label><!--To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.-->
+          </fieldset>
         </form>
       </section>
 
@@ -74,7 +77,7 @@
   </body>
 </html>
 <!--nested elements are indented 2 spaces (tab key)-->
-<!--TO DO: -->
+<!--TO DO: continue with course-->
 <!--Longer TO DO: 
 add a README
 make the repository public
