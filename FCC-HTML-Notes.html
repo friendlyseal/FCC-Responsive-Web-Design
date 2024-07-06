@@ -66,7 +66,7 @@
 
           <fieldset id="radio-buttons-example">
             <legend>Check out these radio buttons big guy</legend> <!--The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.-->
-            <!--form data (for radio buttons) is based on name and value attributes. value attributes can be same as id-->
+            <!--form data (for radio buttons) is based on name and value attributes. value attributes can (and should) be same as id-->
             <label><input type="radio" id="radio-button-example" name="radio-example" value="Radio-1"> Radio Button</label><!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). clicking the text of the label will also select the radio button itself-->
             <label><input type="radio" id="other-radio-button-example" name="radio-example" value="Radio-1">Other Radio Button</label><!--To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.-->
           </fieldset>
@@ -74,6 +74,7 @@
           <fieldset id="checkbox-example">
             <legend>Check out these checkboxes, in case you want more than one option</legend>
             <!--There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.-->
+            <!--name attributes will describe what the group of options are, like "checkbock-example". value attributes will describe what the INDIVIDUAL option's value is like "happy" "sad" "fearful" etc-->
             <label for="checkbox-1">Checkbox #1</label> <input type="checkbox" id="checkbox-1" name="checkbox-example" value="checkbox-1">
             <label for="checkbox-2">Checkbox #2</label><input type="checkbox" id="checkbox-2" name="checkbox-example" value="checkbox-2">
             <label for="checkbox-3">Checkbox #3</label><input type="checkbox" id="checkbox-3" name="checkbox-example" value="checkbox-3">
