@@ -1,6 +1,9 @@
 body{
     background-color: tan;
 }
+h1{
+    text-align: center;
+}
 /*
 fieldset{
     border: none;
