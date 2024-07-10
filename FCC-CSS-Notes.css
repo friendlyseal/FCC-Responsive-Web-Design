@@ -4,6 +4,12 @@ body{
 h1{
     text-align: center;
 }
+
+#steve-image {
+    width: 200px;
+    /*width: 80%; would make it 80% of the width of its parent element*/
+}
+
 /*
 fieldset{
     border: none;
