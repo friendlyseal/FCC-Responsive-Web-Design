@@ -21,6 +21,20 @@ h1{
     margin-right: auto;
 }
 
+.item p{
+    display: inline-block;
+}
+
+.flavor{
+    text-align: left;
+    width: 49%; /*display: inline-block will push one of these p elements to the next row if width were 50%*/
+}
+
+.price{
+    text-align: right;
+    width: 49%;
+}
+
 /*
 fieldset{
     border: none;
