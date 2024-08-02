@@ -23,6 +23,12 @@ h1{
 
 .item p{
     display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*padding: 20px; achieves the same effect*/
+    max-width: 500px;
 }
 
 .flavor, .dessert{ /*Multiple selectors, same rules*/
