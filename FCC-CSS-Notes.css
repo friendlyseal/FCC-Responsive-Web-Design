@@ -26,6 +26,7 @@ h1{
     border: solid;
     background-color: blue;
     margin: 50px auto; /*When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.*/
+    /*padding: 10px 0; shorthand for top bottom padding 10px, left right padding of 0*/
 }
 
 .item p{
