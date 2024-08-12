@@ -28,6 +28,20 @@ h1{
     margin: 50px auto; /*When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.*/
     /*padding: 10px 0; shorthand for top bottom padding 10px, left right padding of 0*/
 }
+#vh-box{
+    height: 1vh; /*vh stands for viewport height, 1vh = 1% viewport height, up to 100vh*/
+    width: 150px;
+    border: solid;
+    background-color: green;
+}
+#rem-box{
+    height: 150px;
+    width: 150;
+    border: solid;
+    background-color: purple;
+    display: block;
+    margin: 0.5rem 0; /*The rem unit stands for root em, and is relative to the font size of the html element.*/
+}
 
 .item p{
     display: inline-block;

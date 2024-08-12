@@ -54,7 +54,8 @@
 
       <section id="form-examble">
         <p>For form elements: action="[url]" indicates where the data should be sent</p>
-        <form action="FILLER">
+        <form action="URL-GOES-HERE" method="get">
+          <!--The method attribute specifies how to send form-data to the URL specified in the action attribute. The form-data can be sent via a GET request as URL parameters (with method="get") or via a POST request as data in the request body (with method="post").-->
           
           <fieldset id="text-example"> <!--The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line. Will also automatically add a border to the block containing a fieldset-->
             <input type="text" placeholder="type = text" name="text-example" required> <!--In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.-->
@@ -87,6 +88,12 @@
         </div>
         <div id="margin-auto-box">
           <p>box with margin: 50px, auto;</p>
+        </div>
+        <div id="vh-box">
+          <p>box with FILLER;</p>
+        </div>
+        <div id="rem-box">
+          <p>box affected by rem;</p>
         </div>
       </section>
       
