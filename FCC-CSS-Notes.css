@@ -15,7 +15,7 @@ h1{
 #centered-box{
     height: 150px;
     width: 150px;
-    border: solid;
+    border: 10px solid black; /* border shorthand */
     background-color: red;
     margin-left: auto;
     margin-right: auto;
