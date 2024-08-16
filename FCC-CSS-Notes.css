@@ -20,6 +20,8 @@ h1{
     margin-left: auto;
     margin-right: auto;
     filter: blur(2px); /*blur*/
+    box-shadow: 0 0 3px 3px #efb762; /* A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. */
+    /*transform: rotate(-0.6deg); */ /*counter-clockwise*/ 
 }
 #margin-auto-box{
     height: 150px;
