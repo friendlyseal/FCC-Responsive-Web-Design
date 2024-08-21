@@ -1,9 +1,15 @@
+*{
+    box-sizing: border-box; /*keeps the border and padding of an object WITHIN the container it's in, rather than extend beyond the container*/
+}
 body{
     background-color: tan;
     /*background-image: url(whateverwhatever.com)*/
 }
 h1{
     text-align: center;
+}
+#uppercase-transform{
+    text-transform: uppercase;
 }
 
 #steve-image {
