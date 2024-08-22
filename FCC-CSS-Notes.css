@@ -74,6 +74,10 @@ h1{
     width: 49%;
 }
 
+#flex-box-example{
+    display: flex;
+}
+
 /*
 fieldset{
     border: none;
