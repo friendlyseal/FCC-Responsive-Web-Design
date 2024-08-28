@@ -30,6 +30,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
     /*width: 80%; would make it 80% of the width of its parent element*/
+    /*width: max(250px, 25vw); would make the image 250px when the viewport is less than 1000px, and 25vw when the viewport is 1000px or more */
 }
 #centered-box{
     height: 150px;
