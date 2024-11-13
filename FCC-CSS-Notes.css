@@ -58,14 +58,21 @@ h3{
     width: 150px;
     border: solid;
     background-color: green;
+    /*box-shadow: offsetX offsetY blurRadius spreadRadius color */ 
+    box-shadow: 5px 5px 5px green;
 }
 #rem-box{
     height: 150px;
     width: 150;
     border: solid;
-    background-color: purple;
+    background-color: linear-gradient(90deg, purple 90%, pink); /*90% to denote where the color change takes place*/
+    /*gradient direction is 180deg bottom to top by defualt*/
     display: block;
     margin: 0.5rem 0; /*The rem unit stands for root em, and is relative to the font size of the html element.*/
+    /*
+    A gradient is when one color transitions into another. The CSS linear-gradient function lets you control the direction of the transition along a line, and which colors are used. One thing to remember is that the linear-gradient function actually creates an image element, and is usually paired with the background property which can accept an image as a value.
+    */
+    /* linear-gradient(gradientDirection, color1, color2, ...); */
 }
 
 .item p{
@@ -91,6 +98,21 @@ h3{
 #flex-box-example{
     display: flex;
 }
+
+a{
+    color: black;
+}
+a:visited{
+    color:cyan;
+}
+a:hover{
+    color: red;
+}
+a:active{ /*upon click */
+    color: rgba(red, green, blue, 50%);
+    /*rgba works like rgb, but adds a fourth channel for opacity */
+}
+
 
 /*
 fieldset{
