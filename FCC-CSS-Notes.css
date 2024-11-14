@@ -112,6 +112,9 @@ a:active{ /*upon click */
     color: rgba(red, green, blue, 50%);
     /*rgba works like rgb, but adds a fourth channel for opacity */
 }
+a:last-of-type{ /*pseudo class */
+    color:darkorange;
+}
 
 
 /*

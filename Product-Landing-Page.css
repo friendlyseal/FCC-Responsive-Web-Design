@@ -1,0 +1,26 @@
+#header-img {
+    max-width: 100%
+  }
+  
+  @media (hover: hover){
+    #submit:hover{
+      background:blue;
+    }
+  }
+  
+  #header{
+    position: fixed;
+    top: 0px;
+  }
+  
+  #header-img{
+    max-height: 50px;
+  }
+  
+  .flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* //use flexbox at least once */

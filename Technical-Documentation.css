@@ -1,10 +1,14 @@
+/* body */
 body {
-    background-color: black;
+    background-color: gray;
     color: white;
   }
-  
-  @media (hover: hover){
-    a:hover{
-      background: white;
-    }
-  }
+.nav-link{
+  background-color: tan;
+}
+
+  a:hover{
+  background: white;
+  color: cyan;
+}  
+/* your project needs a media query. Idk I'll do it later.

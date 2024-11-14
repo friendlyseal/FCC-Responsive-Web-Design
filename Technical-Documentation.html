@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title id='title'>Geoff Ramsey</title>
-    <link rel="stylesheet" href="styles.css">
+    <title id='title'>DSA Cheat Sheet</title>
+    <link rel="stylesheet" href="Technical-Documentation.css"> <!---CHANGE FOR FCC SUBMISSION-->
   </head>
   <body>
     <main id="main-doc">
+      
       <nav id="navbar">
         <header>Neetcode Alorithms with Python</header>
-        <a class="nav-link" href="#arrays">Arrays</a> <!--Do I have to do it like this?-->
+        <a class="nav-link" href="#arrays">Arrays</a>
         <a class="nav-link" href="#pointers">Pointers</a>
         <a class="nav-link" href="#stack">Stack</a>
         <a class="nav-link" href="#binary">Binary</a>
         <a class="nav-link" href="#window">Window</a>
         <a class="nav-link" href="#linked">Linked</a>
       </nav>
+      
       <section class="main-section" id="arrays">
         <header>Arrays</header>
-        <p></p>
-        <code></code>
-        <p></p>
-        <li></li>
-        <li></li>
+        <p>FreeCodeCamp defines Arrays as "[...] a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are able to store more than one item at the same time. Specifically, they are an ordered collection of elements with every value being of the same data type <a href="https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/#:~:text=Arrays%20are%20a%20fundamental%20data,of%20the%20same%20data%20type." target="_blank">(Source).</a> An example of an array may look like this: </p>
+        <code> fruits = ['banana', 'apple', 'pear'] <br/> numbers = [54, 32, 68]</code>
+        <p>Here an array called "fruits" is declared with three string values. A print call like print(fruits[0]) would output 'banana'. Another array called numbers is declared with three integer values. A print call like print(numbers[0] - numbers[1] would output the integer 22 (the difference from 54 - 32). </p>
+        <li>Pros: Functionality, fast access, memory efficiency</li>
+        <li>Cons: Fixed Sizes: not easily added to or subtracted from</li>
       </section>
+      
       <section class="main-section" id="pointers" >
         <header>Pointers</header>
-        <p></p>
-        <code></code>
-        <p></p>
-        <li></li>
-        <li></li>
+        <p>In the simplest terms, pointers are variables that hold the memory address of another variable. One common application you'll see is the Two Pointer method, where one pointer will start at one end of an array, another will start at the other end, and the pointers will check for a condition while moving towards the center.</p>
+        <code>left_pointer = 0 <br> right_pointer= (len(array) - 1)</code>
+        <p>Then the pointers will check for a condition, and if it is not met, would continue working through the array until left_pointer == right_pointer, signifying that each value in the array was checked</p>
+        <code>while left_pointer < right_pointer: <br> {check condition} <br> left_pointer += 1 <br> right_pointer -= 1</code>
+        <li>Pros: Memory efficiency, thoroughness</li>
+        <li>Cons: Difficulty in reading</li>
       </section>
+      
       <section class="main-section" id="stack">
         <header>Stack</header>
         <p></p>
@@ -42,6 +47,7 @@
         <li></li>
         <li></li>
       </section>
+      
       <section class="main-section" id="binary" >
         <header>Binary</header>
         <p></p>
@@ -50,6 +56,7 @@
         <li></li>
         <li></li>
       </section>
+      
       <section class="main-section" id="window">
         <header>Window</header>
         <p></p>
@@ -58,6 +65,7 @@
         <li></li>
         <li></li>
       </section>
+      
       <section class="main-section" id="linked">
         <header>Linked</header>
         <p></p>
@@ -66,6 +74,7 @@
         <li></li>
         <li></li>
       </section>
+    
     </main>
   </body>
 </html>

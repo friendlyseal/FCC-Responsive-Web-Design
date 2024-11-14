@@ -1,0 +1,9 @@
+.project-tile{
+  background-color: #ffffff;
+}
+
+@media (hover: hover){
+  #profile-link:hover{
+    background:green;
+  }
+}
