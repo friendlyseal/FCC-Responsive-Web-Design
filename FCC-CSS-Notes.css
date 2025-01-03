@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     box-sizing: border-box; /*keeps the border and padding of an object WITHIN the container it's in, rather than extend beyond the container*/
     /*by default, the browser includes the border and padding when determining an element's size. this may lead to the overall size of an element being larger than what you explicitly enter*/
     /*To solve this, you could add a universal selector
@@ -95,10 +96,6 @@ h3{
     width: 49%;
 }
 
-#flex-box-example{
-    display: flex;
-}
-
 a{
     color: black;
 }
@@ -116,6 +113,51 @@ a:last-of-type{ /*pseudo class */
     color:darkorange;
 }
 
+#flex-box-example{
+    display: flex;
+    /* Flexbox has a main and cross axis. The main axis is defined by the flex-direction property, which has four possible values:
+
+    row (default): horizontal axis with flex items from left to right
+    row-reverse: horizontal axis with flex items from right to left
+    column: vertical axis with flex items from top to bottom
+    column-reverse: vertical axis with flex items from bottom to top
+*/
+    flex-direction: row;
+    /*The flex-wrap property determines how your flex items behave when the flex container is too small. Setting it to wrap will allow the items to wrap to the next row or column. nowrap (default) will prevent your items from wrapping and shrink them if needed. */
+    flex-direction: wrap;
+    /*The justify-content property determines how the items inside a flex container are positioned along the main axis, affecting their position and the space around them. */
+    justify-content: center;
+    /*The align-items property positions the flex content along the cross axis. */
+    align-items: center;
+    object-fit: cover; /*This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit. */
+    gap: 16px; /*does what it sounds like */
+}
+/*The ::after pseudo-element creates an element that is the last child of the selected element. */
+#flex-box-example::after{
+    content: "";
+    width: 350px;
+}
+div:not(#flex-box-example){
+    color: rgba(red, green, blue, 50%)
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+nav > ul > li:hover{
+    background-color: #dfdfe2;
+    color:#1b1b32;
+    cursor: pointer;
+  }
 
 /*
 fieldset{

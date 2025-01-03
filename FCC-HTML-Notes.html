@@ -154,7 +154,7 @@
         <div></div>
       </section>
 
-      <section id="table-example">
+      <section id="table-example"> 
         <table>
           <caption>Assets</caption><!--caption should always be the first child of a table element-->
           <thead></thead><!--header of a table-->
@@ -165,9 +165,15 @@
         <table></table>
       </section>
 
+      <div id="role-accessibilty-example" role="region"> <!--To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.-->
+        <section aria-labelledby="label-example"><h2 id="label-example">Here is one label</h2></section>
+        <section aria-labelledby="mandatory-label"><h2 id="mandatory-label">Here is antoher label</h2></section>
+      </div>
+
+      <p><span class="sr-only">This text can be ignored by screen readers</span> (see css file</p>
     </main> 
     <footer><!--A footer typically contains information about the author of the document, copyright data, links to terms of use, contact information, and more.-->
-
+      <address></address><!-- the address element is a container for contact information for the author of the page.-->
     </footer>
   </body>
 </html>
