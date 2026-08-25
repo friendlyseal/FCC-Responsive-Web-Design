@@ -1,13 +1,26 @@
+#playing-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .card{
-    color:red;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
 }
 
 .left{
-
+    display: flex;
+    align-self: flex-start;
 }
 .middle{
-
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 .right{
-    
+    display: flex;
+    align-self: flex-end;
 }
