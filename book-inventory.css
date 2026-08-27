@@ -1,0 +1,35 @@
+span{
+    display: inline-block;
+}
+
+.read{
+
+}
+
+.to-read{
+
+}
+
+.in-progress{
+
+}
+
+.status{
+
+}
+
+.rate{
+
+}
+
+.one{
+
+} /* for .rate span elements */
+
+.two{
+
+} /* for .rate span elements */
+
+.three{
+
+} /* for .rate span elements */
