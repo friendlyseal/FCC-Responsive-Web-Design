@@ -33,3 +33,7 @@ span{
 .three{
 
 } /* for .rate span elements */
+
+tr[class="read"]{
+    background-image: linear-gradient();
+}
